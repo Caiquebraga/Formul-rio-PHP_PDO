@@ -5,15 +5,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-    $confirmarSenha = $_POST["confirmar_senha"];
     
     // Validação simples dos campos 
-    if (empty($nome) || empty($email) || empty($senha) || empty($confirmarSenha)) {
+    if (empty($nome) || empty($email) || empty($senha)) {
         echo "Por favor, preencha todos os campos.";
-    } elseif ($senha != $confirmarSenha) {
-        echo "As senhas não coincidem.";
-    } else {
-        // Se todos os campos estiverem preenchidos e as senhas coincidirem, você pode prosseguir com o armazenamento dos dados
+    }  else {
+        // Se todos os campos estiverem preenchidos, você pode prosseguir com o armazenamento dos dados
         // Neste exemplo, apenas exibiremos os dados submetidos
         echo "Cadastro realizado com sucesso!<br>";
         echo "Nome: $nome<br>";
