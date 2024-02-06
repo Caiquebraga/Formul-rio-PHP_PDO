@@ -1,4 +1,4 @@
-# Projeto de Lista de Cadastro em PHP
+# Lista de Cadastro em PHP com PDO
 
 Este é um projeto simples em PHP que utiliza PDO para conexão com um banco de dados e gerencia uma lista de cadastros.
 
